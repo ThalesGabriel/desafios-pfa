@@ -1,0 +1,16 @@
+<h1>Full Cycle Rocks!</h1>
+
+<table>  
+    <thead>  
+        <tr>  
+            <th>- Lista de cursos cadastrados no banco de dados.</th>
+        </tr>  
+    </thead>  
+     <tbody>  
+     <% courses.forEach(function (course) { %>
+        <tr>  
+            <td><%= course.name %></td>
+        </tr>                                   
+     <% }) %>
+     </tbody>
+</table>  
