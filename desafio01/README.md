@@ -23,8 +23,7 @@
 
 4 - Nginx
 
-- execute `docker build -t nginx nginx`
-- execute `docker run -dp 8080:80 --name nginx --network desafio-pfa-1 -v "$(pwd)"/app:/usr/src/app nginx`
+- execute `docker run -dp 8080:80 --name nginx --network desafio-pfa-1 -v "$(pwd)"/app:/usr/src/app 042821/desafio01:nginx`
 
 5 - Resultado
 
