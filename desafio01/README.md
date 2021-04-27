@@ -19,8 +19,7 @@
 
 3 - Node
 
-- execute `docker build -t nodeserver app`
-- execute `docker run -d --name app --network desafio-pfa-1 -v "$(pwd)"/app:/usr/src/app nodeserver bash -c "npm install && node index.js"`
+- execute `docker run -d --name app --network desafio-pfa-1 -v "$(pwd)"/app:/usr/src/app 042821/desafio01`
 
 4 - Nginx
 
