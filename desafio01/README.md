@@ -10,20 +10,15 @@
 - execute `docker network create desafio-pfa-1`
 
 2 - Mysql
-- execute `docker run -d --name db -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=nodedb --network desafio-pfa-1 -v "$(pwd)"/mysql:/usr/src/app mysql:5.7`
-- execute `docker exec -it db bash -c "mysql -u root -p"`
-- execute senha `root`
-- execute `use nodedb;`
-- execute `CREATE TABLE IF NOT EXISTS courses (id int not null AUTO_INCREMENT, name varchar(255), PRIMARY KEY (id));`
-- execute `exit`
+- execute `docker run -d --name db -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=nodedb --network desafio-pfa-1 mysql:5.7`
 
 3 - Node
 
-- execute `docker run -d --name app --network desafio-pfa-1 -v "$(pwd)"/app:/usr/src/app 042821/desafio01`
+- execute `docker run -d --name app --network desafio-pfa-1 042821/desafio01:node-v2`
 
 4 - Nginx
 
-- execute `docker run -dp 8080:80 --name nginx --network desafio-pfa-1 -v "$(pwd)"/app:/usr/src/app 042821/desafio01:nginx`
+- execute `docker run -dp 8080:80 --name nginx --network desafio-pfa-1 042821/desafio01:nginx-v2`
 
 5 - Resultado
 
