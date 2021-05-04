@@ -14,6 +14,7 @@
 
 3 - Node
 
+- Espere alguns segundos enquanto o mysql está processando
 - execute `docker run -d --name app --network desafio-pfa-1 042821/desafio01:node-v2`
 
 4 - Nginx

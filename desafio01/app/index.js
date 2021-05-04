@@ -2,7 +2,6 @@ const express = require('express')
 const mysql = require('mysql')
 const app = express()
 const path = require('path')
-const fs = require('fs')
 const port = 3000
 const config = {
     host: 'db',
@@ -42,7 +41,5 @@ app.get('/', function (req, res) {
 });
 
 app.listen(port, ()=> {
-    var files = fs.readdirSync('/app');
-    console.log(files)
     console.log('Rodando na porta ' + port)
 })
