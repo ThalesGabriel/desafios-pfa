@@ -43,7 +43,7 @@ services:
       - ./mysql:/data/application
     environment: 
       - MYSQL_DATABASE=nodedb
-      - MYSQL_ROOT_PASSWORD=
+      - MYSQL_ROOT_PASSWORD=root
       - MYSQL_ROOT_HOST=%
     ports:
       - 3306:3306
