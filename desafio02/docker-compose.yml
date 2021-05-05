@@ -19,7 +19,7 @@ services:
       context: ./app
       dockerfile: Dockerfile
     container_name: app
-    entrypoint: dockerize -wait tcp://db:3305 -timeout 20s node index.js
+    entrypoint: dockerize -wait tcp://db:3306 -timeout 20s node index.js
     tty: true
     volumes: 
       - ./app:/app
@@ -46,7 +46,7 @@ services:
       - MYSQL_ROOT_PASSWORD=
       - MYSQL_ROOT_HOST=%
     ports:
-      - 3305:3305
+      - 3306:3306
     networks: 
       - db-network
 
