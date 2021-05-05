@@ -45,7 +45,7 @@ services:
       - MYSQL_DATABASE=nodedb
       - MYSQL_ROOT_PASSWORD=root
     ports:
-      - 3306:3306
+      - 3305:3306
     networks: 
       - db-network
 
